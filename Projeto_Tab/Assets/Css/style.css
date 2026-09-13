@@ -29,3 +29,7 @@
 .btnCalcular:hover {
     background-color: gray;
 }
+
+.resposta-tabuada {
+    flex-direction: column;
+}
