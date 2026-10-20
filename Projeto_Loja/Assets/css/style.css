@@ -1,3 +1,14 @@
 @charset "UTF-8";
 
+:root {
+    --AzulFundo: #071A2C;
+    --AzulDestaque: #16A8FF;
+    --BrancoAzulado: #F4F7FB;
+    --Branco: #FFFFFF;
+    --AzulAcinzentado: #102A43;
+}
+
+body {
+    background-color: var(--AzulFundo);
+}
 
