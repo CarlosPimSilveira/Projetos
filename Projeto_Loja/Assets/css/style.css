@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 :root {
@@ -8,7 +9,75 @@
     --AzulAcinzentado: #102A43;
 }
 
-body {
-    background-color: var(--AzulFundo);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: var(--AzulFundo);
+    font-family: Arial, sans-serif;
+}
+
+.ControlerSite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--AzulAcinzentado);
+    border-bottom: 2px solid var(--AzulDestaque);
+    gap: 20px;
+}
+
+.LogoSite h2 {
+    color: var(--AzulDestaque);
+    font-size: 26px;
+}
+
+.MenuSite {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.MenuSite a {
+    text-decoration: none;
+    color: var(--BrancoAzulado);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.MenuSite a:hover {
+    color: var(--AzulDestaque);
+    border-bottom-color: var(--AzulDestaque);
+}
+
+.CarrinhoSite a {
+    text-decoration: none;
+    color: var(--Branco);
+    background-color: var(--AzulDestaque);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.CarrinhoSite a:hover {
+    background-color: #0088d6;
+}
+
+@media (max-width: 800px) {
+    .ControlerSite {
+        flex-direction: column;
+    }
+
+    .MenuSite {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
